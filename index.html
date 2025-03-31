@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <!-- Load reCAPTCHA API script with your Site Key -->
-    <script src="https://www.google.com/recaptcha/api.js?render=YOUR_SITE_KEY"></script>
+  <!-- Load reCAPTCHA API script with your Site Key -->
+  <script src="https://www.google.com/recaptcha/api.js?render=6Ldf4cUqAAAAKS21v9LD68nzjAkxnUnu1t7bHTz"></script>
 </head>
 <body>
-    <script>
-        // Wait for the reCAPTCHA script to load and execute it
-        grecaptcha.ready(() => {
-            // Execute reCAPTCHA with the action 'login' and get the token
-            grecaptcha.execute('YOUR_SITE_KEY', { action: 'login' }).then(token => {
-                // Send the token back to Thunkable using postMessage
-                window.ReactNativeWebView.postMessage(token);
-            });
-        });
-    </script>
+  <script>
+    // Wait for the reCAPTCHA script to load and execute it
+    grecaptcha.ready(() => {
+      // Execute reCAPTCHA with the action 'login' and get the token
+      grecaptcha.execute('6Ldf4cUqAAAAKS21v9LD68nzjAkxnUnu1t7bHTz', { action: 'login' }).then(token => {
+        // Send the token back to Thunkable using postMessage
+        window.ReactNativeWebView.postMessage(token);
+      });
+    });
+  </script>
 </body>
 </html>
